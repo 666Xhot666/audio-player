@@ -1,0 +1,28 @@
+/*.controlButton_Play {*/
+/*    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMzMzIiBkPSJNOCA1djE0bDExLTd6Ii8+PC9zdmc+) no-repeat 60%;*/
+/*}*/
+/*.controlButton_Pause {*/
+/*    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMzMzIiBkPSJNNiAxOWg0VjVINnYxNHptOC0xNHYxNGg0VjVoLTR6Ii8+PC9zdmc+) no-repeat 55%;*/
+/*}*/
+/*.controlButton_Stop {*/
+/*    background: url(data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSI1MCIKICBoZWlnaHQ9IjUwIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKPgogIDxwYXRoIGQ9Ik0xIDEyIEgzOSBWMzkgSDEyIFYxMiBaIiBmaWxsPSIjMzMzIiAvPgo8L3N2Zz4=) no-repeat 55%;*/
+/*}*/
+/*.controlButton_Repeat {*/
+/*    background: url(data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSI1MCIKICBoZWlnaHQ9IjUwIgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCj4KICA8cGF0aAogICAgZD0iTTEzLjE0NTkgMTEuMDQ5OUwxMi45NzE2IDkuMDU3NTIgTDE1LjM0NjIgOC44NDk3N0MxNC40NDcxIDcuOTgzMjIgMTMuMjI0MiA3LjQ1MDMgMTEuODc2OSA3LjQ1MDNDOS4xMTU0NyA3LjQ1MDMgNi44NzY4OSA5LjY4ODg4IDYuODc2ODkgMTIuNDUwM0M2Ljg3Njg5IDE1LjIxMTcgOS4xMTU0NyAxNy40NTAzIDExLjg3NjkgMTcuNDUwM0MxMy42OTc3IDE3LjQ1MDMgMTUuMjkxMSAxNi40NzcxIDE2LjE2NTQgMTUuMDIyNEwxOC4xNjgyIDE1LjUyMzFDMTcuMDMwMSAxNy44NDg3IDE0LjY0MDUgMTkuNDUwMyAxMS44NzY5IDE5LjQ1MDNDOC4wMTA5IDE5LjQ1MDMgNC44NzY4OSAxNi4zMTYzIDQuODc2ODkgMTIuNDUwM0M0Ljg3Njg5IDguNTg0MzEgOC4wMTA5IDUuNDUwMyAxMS44NzY5IDUuNDUwM0MxMy44MjMzIDUuNDUwMyAxNS41ODQyIDYuMjQ0NzQgMTYuODUzIDcuNTI3MDZMMTYuNjA3OCA0LjcyNDEyTDE4LjYwMDIgNC41NDk4TDE5LjEyMzEgMTAuNTI3TDEzLjE0NTkgMTEuMDQ5OVoiCiAgICBmaWxsPSIjMzMzIgogIC8+Cjwvc3ZnPg==) no-repeat 55%;*/
+/*}*/
+.controlButton {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(230,230,230, 0.14);
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out 4ms;
+    padding: 0;
+    cursor: pointer;
+    box-shadow:  0px 0px 20px 10px rgba(230,230,230, 0.17);
+}
+
+.controlButton:hover {
+    box-shadow:  0px 0px 15px 15px rgba(221, 221, 221, 0.24);
+}

@@ -1,0 +1,30 @@
+.dragAndDropArea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 200ms ease-out 40ms;
+}
+.dragAndDrop {
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dropAria {
+    width: 40%;
+    height: 40%;
+    border-radius: 50px;
+    border: black 2px dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,48 @@
+.visualizer_container {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(1, 1, 1, 0.1);
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: inset  0px 0px 15px 10px rgba(245, 245, 245, 0.2);
+}
+
+.visualizer {
+    width: 90%;
+    height: 80%;
+    background-color: rgba(240, 240, 240, 0.65);
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 500ms ease 6ms;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.wave_fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+.wave_fadeOut {
+    animation: fadeOut 1s ease-out;
+}

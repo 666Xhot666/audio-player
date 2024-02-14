@@ -1,0 +1,17 @@
+.songTitle {
+    width: 100%;
+    height: 12%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, 0.1);
+    box-shadow: inset  0px 0px 15px 10px rgba(245, 245, 245, 0.2);
+    box-sizing: border-box;
+}
+.songTitle h2,h3,h4 {
+    border-radius: 5px;
+    background-color: rgba(230,230,230, 0.17);
+    box-shadow:  0px 0px 20px 10px rgba(230,230,230, 0.17);
+}
