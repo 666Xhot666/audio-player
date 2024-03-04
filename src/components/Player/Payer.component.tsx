@@ -6,6 +6,7 @@ import VisualizeComponent, {VisualizeHandle} from "../Visualize/Visualize.compon
 import DragAndDropComponent from "../DragAndDrop/DragAndDrop.component";
 import SoundDriver from "../../drivers/SoundDriver";
 import {Tags} from "../../decoders/AudioMetaDecoder";
+import AudioFileInputComponent from "../AudioFileInput/AudioFileInputComponent";
 
 const PayerComponent = () => {
     const [file, setFile] = useState<File|null>(null);
@@ -100,6 +101,7 @@ const PayerComponent = () => {
                     pause={togglePlayer(ControlButtonType.Pause)}
                     stop={togglePlayer(ControlButtonType.Stop)}
                     repeat={togglePlayer(ControlButtonType.Repeat)}/>
+                <AudioFileInputComponent onFileUpload={fileUploadHandler} accept="audio" loading={loading}/>
             </div>
             <div className="PlayerBackground" style={{backgroundImage:`url(${songBackground.current})`}}/>
         </DragAndDropComponent>
