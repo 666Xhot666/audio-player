@@ -35,7 +35,7 @@ const VisualizeComponent = forwardRef<VisualizeHandle,VisualizeProps>(({onPlayba
         return {
             setData: (audioData:AudioBuffer) => {
                 const rawData = audioData.getChannelData(0);
-                const samples = audioData.sampleRate/5;
+                const samples = audioData.sampleRate/8;
                 const blockSize = Math.floor(rawData.length/samples);
                 const filteredData = Array.from({length:samples}, (_,index)=> {
                     const blockStart = blockSize*index;
@@ -74,8 +74,8 @@ const VisualizeComponent = forwardRef<VisualizeHandle,VisualizeProps>(({onPlayba
                 onPlaybackMove(currentTime);
                 draggable.current = true;
             })
-            .on('mouseup', (event:React.MouseEvent<SVGRectElement>) =>{draggable.current = false})
-            .on('mouseleave', (event:React.MouseEvent<SVGRectElement>) =>{draggable.current = false})
+            .on('mouseup', () =>{draggable.current = false})
+            .on('mouseleave', () =>{draggable.current = false})
             .on('mousemove', (event:React.MouseEvent<SVGRectElement>) =>{
                 if (!draggable.current || !svgRef.current) return;
                 const width = svgRef.current.clientWidth;
